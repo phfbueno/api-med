@@ -21,7 +21,7 @@ public class Endereco {
         public Endereco(DadosCadastraisEndereco dados) {
                 this.logradouro = dados.logradouro();
                 this.bairro = dados.bairro();
-                this.cep = dados.cep();
+                this.cep = dados.cep().replaceAll("[()\\[\\]{}.,;]", "");
                 this.numero = dados.numero();
                 this.complemento = dados.complemento();
                 this.cidade = dados.cidade();

@@ -10,7 +10,7 @@ public record DadosCadastraisEndereco(
         @NotBlank
         String bairro,
         @NotBlank
-        @Pattern(regexp = "\\d{8}")
+        @Pattern(regexp = "\\d{5}-\\d{3}", message = "O CEP deve estar no formato 00000-000")
         String cep,
         @NotBlank
         String cidade,

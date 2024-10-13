@@ -9,4 +9,6 @@ import java.util.Optional;
 
 public interface MedicoRepository extends JpaRepository<Medico, Long> {
     Page<Medico> findAllByAtivoTrue(Pageable paginacao);
+
+    Optional<Medico> findByIdAndAtivoTrue(Long id);
 }

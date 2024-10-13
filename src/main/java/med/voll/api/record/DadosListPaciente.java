@@ -1,6 +1,5 @@
 package med.voll.api.record;
 
-import med.voll.api.model.Medico;
 import med.voll.api.model.Paciente;
 
 public record DadosListPaciente(

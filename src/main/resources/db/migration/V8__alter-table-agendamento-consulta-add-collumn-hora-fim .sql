@@ -1,0 +1,2 @@
+ALTER TABLE agendamento_consulta
+ADD COLUMN data_hora_fim_consulta TIMESTAMP;

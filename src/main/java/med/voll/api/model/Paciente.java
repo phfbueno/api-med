@@ -10,11 +10,11 @@ import med.voll.api.record.DadosAtualizacaoPaciente;
 import med.voll.api.record.DadosCadastraisPaciente;
 
 @Table(name = "paciente")
-@Entity(name = "paciente")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
+@Entity
 public class Paciente {
 
     @Id
